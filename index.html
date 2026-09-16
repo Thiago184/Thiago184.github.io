@@ -2,29 +2,58 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <title>Página Pessoal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Página pessoal de Thiago Henrique de Oliveira Gonçalves, estudante de Ciência da Computação na UFOP.">
+  <title>Thiago Henrique | Página pessoal</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-100 font-sans p-10">
+<body class="min-h-screen bg-slate-100 px-4 py-8 font-sans text-slate-700 sm:px-6 sm:py-12">
+  <main class="mx-auto max-w-3xl overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-xl shadow-slate-200/60">
+    <div class="h-3 bg-gradient-to-r from-teal-500 to-sky-500" aria-hidden="true"></div>
+    <div class="px-6 py-10 sm:px-12 sm:py-12">
+      <header class="text-center">
+        <p class="text-xs font-semibold uppercase tracking-widest text-teal-700">Minha página pessoal</p>
+        <h1 class="mt-3 text-3xl font-bold tracking-tight text-slate-800 sm:text-4xl">Sobre mim</h1>
+      </header>
 
-  <div class="bg-white p-6 rounded-xl">
-        <h1 class="text-3xl text-center font-bold text-slate-700">
-            Sobre mim
-        </h1>
+      <section aria-label="Apresentação pessoal" class="mt-8 text-center">
         <img
-            src="foto.jpg"
-            class="w-48 rounded-full border-4 border-slate-700 p-1 mx-auto"
+          src="foto.jpg"
+          alt="Foto de Thiago Henrique de Oliveira Gonçalves"
+          class="mx-auto h-44 w-44 rounded-full border-4 border-teal-100 object-cover object-[center_85%] p-1 shadow-md sm:h-48 sm:w-48"
         >
-        <h2 class="text-2xl font-semibold text-slate-700">
-            Meus interesses
-        </h2>
-        <ul class="bg-slate-100 p-4 rounded-lg">
-            <li class="hover:text-red-500">Programação</li>
-            <li class="hover:text-red-500">Filmes</li>
-            <li class="hover:text-red-500">Jogos</li>
+        <p class="mt-6 text-lg leading-relaxed">
+          Meu nome é <strong class="font-semibold text-slate-800">Thiago Henrique de Oliveira Gonçalves</strong>,
+          sou estudante de Ciência da Computação da Universidade Federal de Ouro Preto
+          (<abbr title="Universidade Federal de Ouro Preto" class="no-underline">UFOP</abbr>) e atualmente estou no <strong class="font-semibold text-teal-700">6º período</strong>.
+        </p>
+        <p class="mt-4 leading-relaxed text-slate-600">
+          Entre meus interesses estão a programação e o aprendizado de máquina, além de filmes e jogos.
+          Esta página foi criada para uma disciplina da faculdade e reúne um pouco sobre mim
+          e os assuntos que me interessam.
+        </p>
+        <div class="mt-6 flex flex-wrap justify-center gap-2 text-xs font-medium text-slate-600">
+          <span class="rounded-lg bg-slate-100 px-3 py-2">Ciência da Computação</span>
+          <span class="rounded-lg bg-slate-100 px-3 py-2">UFOP</span>
+          <span class="rounded-lg bg-slate-100 px-3 py-2">6º período</span>
+        </div>
+      </section>
+
+      <section aria-labelledby="interesses" class="mt-10 border-t border-slate-100 pt-8">
+        <h2 id="interesses" class="text-center text-2xl font-semibold text-slate-800">Meus interesses</h2>
+        <p class="mt-2 text-center text-sm text-slate-500">Um pouco do que gosto de explorar.</p>
+        <ul class="mt-6 flex flex-wrap justify-center gap-4">
+          <li class="rounded-full border border-sky-200 bg-sky-50 px-6 py-3 font-medium text-sky-800 shadow-sm transition duration-200 hover:-translate-y-1 hover:bg-sky-100 hover:shadow-lg hover:shadow-sky-200/60 motion-reduce:transform-none motion-reduce:transition-none">Programação</li>
+          <li class="rounded-full border border-violet-200 bg-violet-50 px-6 py-3 font-medium text-violet-800 shadow-sm transition duration-200 hover:-translate-y-1 hover:bg-violet-100 hover:shadow-lg hover:shadow-violet-200/60 motion-reduce:transform-none motion-reduce:transition-none">Filmes</li>
+          <li class="rounded-full border border-amber-200 bg-amber-50 px-6 py-3 font-medium text-amber-800 shadow-sm transition duration-200 hover:-translate-y-1 hover:bg-amber-100 hover:shadow-lg hover:shadow-amber-200/60 motion-reduce:transform-none motion-reduce:transition-none">Jogos</li>
+          <li class="rounded-full border border-teal-200 bg-teal-50 px-6 py-3 text-center font-medium text-teal-800 shadow-sm transition duration-200 hover:-translate-y-1 hover:bg-teal-100 hover:shadow-lg hover:shadow-teal-200/60 motion-reduce:transform-none motion-reduce:transition-none">Aprendizado de máquina</li>
         </ul>
-  </div>
+      </section>
+    </div>
+    <footer class="border-t border-slate-100 bg-slate-50 px-6 py-5 text-center text-xs text-slate-500">
+      Thiago Henrique · Ciência da Computação · UFOP
+    </footer>
+  </main>
 
 </body>
 </html>
-
